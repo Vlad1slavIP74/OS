@@ -9,7 +9,7 @@ struct block{
  struct block *next; 
 };
 
-struct block *freeList=memory;
+struct block *freeList=(struct block*)memory;
 
 void initialize();
 void split(struct block *fitting_slot,size_t size);
